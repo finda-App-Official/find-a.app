@@ -69,104 +69,46 @@
         </div>
       </section>
       <section id="preise">
-        <table>
-          <tr id="tr-1">
-            <th>
-              <div class="th-title">Flatrate System</div>
-              <div class="th-preis">6€ / Stelle pro Monat</div>
-              <div class="th-buttons">
-                <a class="th-buy">Buchen</a>
+        <div class="section-content">
+          <div class="section-content-item">
+            <div class="content-item-topbar">
+              <div class="content-item-title">Flatrate</div>
+              <div class="content-item-info">i</div>
+            </div>
+            <div class="content-item-stellen">
+              <div class="content-item-stellen-text">
+                Anzahl Stellen (5,50€/Stelle)
               </div>
-            </th>
-            <th>
-              <div class="th-title">Unlimited Access</div>
-              <div class="th-preis">unbegrenzte Stellen</div>
-              <div class="th-buttons">
-                <a href="" class="th-buy">Buchen</a>
+              <input
+                type="number"
+                class="content-item-stellen-count"
+                id="content-item-stellen-count-1"
+                value="1"
+              />
+            </div>
+            <select
+              name="content-dauer"
+              id="content-dauer-select-1"
+              class="content-item-dauer-select"
+            >
+              <option value="6">6 Monate</option>
+              <option value="12">12 Monate</option>
+            </select>
+            <div class="content-item-premium">
+              <input type="checkbox" />
+              <div class="content-item-premium-text">
+                Premium: +25% des Preises
               </div>
-            </th>
-            <th>
-              <div class="th-title">Premium Unlimited Access</div>
-              <div class="th-preis">unbegrenzte Stellen + Premium Features</div>
-              <div class="th-buttons">
-                <a href="" class="th-buy">Buchen</a>
+            </div>
+            <div class="content-item-gesamt">
+              <div class="content-item-gesamt-text">
+                Gesamtpreis:
+                <span class="content-item-gesamt-preis">5,50€</span>
               </div>
-            </th>
-          </tr>
-          <tr id="tr-2">
-            <td id="td-1">
-              <div class="td-preise">
-                > 6 Monate: 36€ <br />
-                > 12 Monate: 65€
-              </div>
-              <div class="td-empfehlung">
-                Empfohlen für Unternehmen bis zu 50 Mitarbeiter
-              </div>
-            </td>
-            <td id="td-2">
-              <div class="td-preise">
-                > 6 Monate: 250€ <br />
-                > 12 Monate: 460€
-              </div>
-              <div class="td-empfehlung">
-                Empfohlen für Unternehmen mit bis zu 150 Mitarbeitern
-              </div>
-            </td>
-            <td id="td-3">
-              <div class="td-preise">
-                > 6 Monate: 520€ <br />
-                > 12 Monate: 999€
-              </div>
-              <div class="td-empfehlung">
-                Empfohlen für Unternehmen mit 150+ Mitarbeitern
-              </div>
-              <div class="td-info">
-                <div
-                  class="td-info-text"
-                  title="Durch ein Premium-Abonnement können Sie zu jeder Stelle nicht nur Bilder, sondern auch Videos hochladen, wodurch Sie sich deutlich von Mitbewerbern in der Art der Unternehmenspräsentation abheben können - denn mit einem Video lässt sich viel besser Interesse wecken und darstellen, wie facettenreich ein Job sein kann!"
-                >
-                  Videoeinbindung
-                </div>
-                <div class="td-info-check">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="limegreen"
-                    class="bi bi-check2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div class="td-info">
-                <div
-                  class="td-info-text"
-                  title="Durch die Premiumversion von finda können Sie je Stelle unter dem Reiter 'Vorgeschlagene Profile' direkt aktiv Schüler matchen. Ihnen werden eine Anzahl an Profilen vorgeschlagen, die zu Ihrer Stelle passen, woraufhin Sie jedes dieser Profile angucken und 5 Profile matchen können. Daraufhin bekpommen diese Schüler eine Benachrichtigung, dass Sie aktiv gematcht wurden um anschließend bei Interesse direkt mit Ihnen durch den Chat in Kontakt treten."
-                >
-                  Aktiv Schüler matchen
-                </div>
-                <div class="td-info-check">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="limegreen"
-                    class="bi bi-check2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
+            </div>
+            <button class="content-item-book"><span>Buchen</span></button>
+          </div>
+        </div>
       </section>
     </div>
     <nav>

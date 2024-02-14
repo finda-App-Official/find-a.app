@@ -1,110 +1,152 @@
-table {
+.preise {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.section-content {
   width: 90%;
+  display: flex;
   margin: auto;
-  overflow-x: scroll;
-  border-collapse: collapse;
-}
-tr {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-#tr-1 {
-  border-bottom: 0.25px solid rgb(46, 103, 226);
-}
-#tr-2 {
-  border-top: 0.25px solid rgb(46, 103, 226);
-}
-#td-1 {
-  border-right: 0.5px solid rgb(46, 103, 226);
-}
-#td-3 {
-  border-left: 0.5px solid rgb(46, 103, 226);
-}
-td {
-  border: 0, 1px solid rgb(46, 103, 226);
-}
-th {
-  width: calc(100% / 3);
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-.th-title {
-  font-size: 30px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-}
-.th-preis {
-  margin: 2.5px 0;
-  font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-.th-buttons {
+.section-content-item {
+  width: 200px;
+  margin: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.th-buy {
-  padding: 5px 10px;
-  background-color: rgb(46, 103, 226);
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  color: white;
-  border: none;
   border-radius: 10px;
-  margin: 10px auto;
-  text-decoration: none;
+  border: solid 1px rgb(46, 103, 226);
+  padding: 10px;
 }
-.th-buy:hover {
-  cursor: pointer;
-}
-td {
-  width: calc(100% / 3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.td-info {
-  width: 100%;
+.content-item-topbar {
+  width: 90%;
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: 1px solid black;
+  margin: 0 auto;
 }
-.td-info-text {
+.content-item-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto 10px;
+  font-family: "Anton", sans-serif;
+}
+.content-item-info {
+  user-select: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid black 0.4px;
+  margin: auto 10px;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  margin: auto 10px;
-}
-.td-info-check {
-  justify-content: center;
+  font-family: "Anton", sans-serif;
+  text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.content-item-info:hover {
+  cursor: pointer;
+}
+.content-item-stellen {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-item-stellen-text {
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
   margin: auto 10px;
-  height: 25px;
-  padding: 6px;
 }
-.td-preise {
-  margin: 10px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
+.content-item-stellen-count {
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  border: solid black 0.4px;
+  margin: auto 10px;
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.td-empfehlung {
-  margin: 20px 10px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
+.content-item-dauer-select {
+  width: 90%;
+  margin: 10px auto;
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
 }
-.td-empty {
-  > .td-empfehlung {
-    display: none;
+.content-item-dauer-select option {
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
+}
+.content-item-premium {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+.content-item-premium input {
+  height: 30px;
+  width: 30px;
+  margin: auto 10px;
+}
+.content-item-premium-text {
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
+  margin: auto 10px auto 0;
+}
+.content-item-gesamt {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: solid 1px black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.content-item-gesamt-text {
+  font-size: 15px;
+  font-family: "Anton", sans-serif;
+  margin: auto 10px;
+  > span {
+    font-size: 20px;
+    font-weight: bold;
   }
-  > .td-preise {
-    display: none;
-  }
-  > .td-info {
-    display: none;
+}
+.content-item-book {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: rgb(46, 103, 226);
+  color: white;
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+  padding: 10px;
+  > span {
+    font-size: 20px;
+    font-weight: bold;
   }
 }

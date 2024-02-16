@@ -12,7 +12,7 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   padding: 20px;
   flex-wrap: wrap;
 }

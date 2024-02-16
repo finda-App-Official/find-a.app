@@ -72,12 +72,12 @@
         <div class="section-content">
           <div class="section-content-item">
             <div class="content-item-topbar">
-              <div class="content-item-title">Flatrate</div>
+              <div class="content-item-title">Starter</div>
               <div class="content-item-info">i</div>
             </div>
             <div class="content-item-stellen">
-              <div class="content-item-stellen-text">
-                Anzahl Stellen (5,50€/Stelle)
+              <div class="content-item-stellen-text" id="preis-1">
+                Anzahl Stellen (6€/Stelle)
               </div>
               <input
                 type="number"
@@ -95,18 +95,58 @@
               <option value="12">12 Monate</option>
             </select>
             <div class="content-item-premium">
-              <input type="checkbox" />
+              <input type="checkbox" id="premium-check-1" />
               <div class="content-item-premium-text">
-                Premium: +25% des Preises
+                Premium: +50% des Preises
               </div>
             </div>
             <div class="content-item-gesamt">
               <div class="content-item-gesamt-text">
                 Gesamtpreis:
-                <span class="content-item-gesamt-preis">5,50€</span>
+                <span class="content-item-gesamt-preis" id="gesamt-1">36</span>€
               </div>
             </div>
-            <button class="content-item-book"><span>Buchen</span></button>
+            <button class="content-item-book">
+              <span> In der App buchen</span>
+            </button>
+          </div>
+          <div class="section-content-item">
+            <div class="content-item-topbar">
+              <div class="content-item-title">Unlimited Access</div>
+              <div class="content-item-info">i</div>
+            </div>
+            <div class="content-item-stellen">
+              <div class="content-item-stellen-text">Anzahl Stellen</div>
+              <input
+                type="text"
+                class="content-item-stellen-count"
+                id="content-item-stellen-count-1"
+                value="∞"
+                disabled
+              />
+            </div>
+            <select
+              name="content-dauer"
+              id="content-dauer-select-2"
+              class="content-item-dauer-select"
+            >
+              <option value="6">6 Monate</option>
+              <option value="12">12 Monate</option>
+            </select>
+            <div class="content-item-premium">
+              <input type="checkbox" checked id="premium-check-2" />
+              <div class="content-item-premium-text">Premium inklusive</div>
+            </div>
+            <div class="content-item-gesamt">
+              <div class="content-item-gesamt-text">
+                Gesamtpreis:
+                <span class="content-item-gesamt-preis" id="gesamt-2">520</span
+                >€
+              </div>
+            </div>
+            <button class="content-item-book">
+              <span>In der App buchen</span>
+            </button>
           </div>
         </div>
       </section>
@@ -222,5 +262,6 @@
         </div>
       </div>
     </footer>
+    <script src="/src/unternehmen/price.js"></script>
   </body>
 </html>

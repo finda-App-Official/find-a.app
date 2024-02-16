@@ -69,9 +69,9 @@ document
     let gesamt = document.getElementById("gesamt-2");
     let value = document.getElementById("content-dauer-select-2").value;
     if (value === "6") {
-      gesamt = "520";
+      gesamt.innerHTML = "520";
     } else if (value === "12") {
-      gesamt = "999";
+      gesamt.innerHTML = "999";
     }
   });
 document.getElementById("premium-check-2").addEventListener("change", (ev) => {

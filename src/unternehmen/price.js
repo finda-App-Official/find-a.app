@@ -74,9 +74,6 @@ document
       gesamt.innerHTML = "999";
     }
   });
-document.getElementById("premium-check-2").addEventListener("change", (ev) => {
-  let value = document.getElementById("premium-check-2").checked;
-  if (!value) {
-    document.getElementById("premium-check-2").checked = true;
-  }
+document.getElementById("premium-check-2").addEventListener("click", (ev) => {
+  document.getElementById("premium-check-2").checked = true;
 });

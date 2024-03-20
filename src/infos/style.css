@@ -13,3 +13,6 @@ h2 {
 strong {
   font-weight: 600;
 }
+span {
+  text-decoration: underline;
+}

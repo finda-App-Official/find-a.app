@@ -11,14 +11,15 @@ section {
 /* ... */
 
 .section-img-container {
-  width: max(35%, 200px);
+  width: max(30%, 300px);
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
 .section-img {
-  width: 90%;
+  width: 200%;
+  max-width: 1800px;
   margin: auto;
   user-select: none;
   -webkit-user-drag: none;

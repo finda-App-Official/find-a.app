@@ -56,7 +56,7 @@ section {
     text-decoration: none;
   }
   > span {
-    font-weight: 800;
+    font-weight: 750;
     font-size: max(1vw, 1, 8rem);
   }
 }

@@ -55,6 +55,10 @@ section {
     color: rgb(46, 103, 226);
     text-decoration: none;
   }
+  > span {
+    font-weight: 700;
+    font-size: max(1vw, 1, 4rem);
+  }
 }
 .section-content-buttons {
   display: flex;
@@ -75,4 +79,11 @@ section {
   background-color: rgb(46, 103, 226);
   color: white;
   font-family: "Roboto", sans-serif;
+}
+#preise {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 1) 12%,
+    hsla(0, 0%, 0%, 1) 100%
+  );
 }

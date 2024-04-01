@@ -25,6 +25,7 @@
   border-radius: 10px;
   border: solid 1px rgb(46, 103, 226);
   padding: 10px;
+  background-color: white;
 }
 .content-item-topbar {
   width: 90%;

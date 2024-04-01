@@ -56,8 +56,8 @@ section {
     text-decoration: none;
   }
   > span {
-    font-weight: 700;
-    font-size: max(1vw, 1, 4rem);
+    font-weight: 800;
+    font-size: max(1vw, 1, 8rem);
   }
 }
 .section-content-buttons {

@@ -40,6 +40,9 @@ section {
   text-align: start;
   justify-self: flex-start;
   margin: 10px 0;
+  > span {
+    font-weight: 700;
+  }
 }
 .section-content-description {
   font-size: max(1vw, 1.2rem);

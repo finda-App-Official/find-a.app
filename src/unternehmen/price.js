@@ -78,5 +78,5 @@ document.getElementById("premium-check-2").addEventListener("click", (ev) => {
   document.getElementById("premium-check-2").checked = true;
 });
 function Buchen() {
-  window.location.href = "https://dev.find-a.app";
+  window.location.href = "https://web.find-a.app";
 }

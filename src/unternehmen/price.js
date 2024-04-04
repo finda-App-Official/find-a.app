@@ -80,3 +80,34 @@ document.getElementById("premium-check-2").addEventListener("click", (ev) => {
 function Buchen() {
   window.location.href = "https://web.find-a.app";
 }
+
+function openDialog(id) {
+  let content = document.getElementById(`content-${id}`);
+  let extend = document.getElementById(`extend-${id}`);
+  let text = document.getElementById(`extendt-${id}`);
+
+  if (extend.style.display === "none") {
+    text.style.display = "none";
+    extend.style.display = "flex";
+    extend.animate([{ height: "0%" }, { height: "calc(100% - 61px)" }], {
+      duration: 200,
+    });
+    setTimeout(() => {
+      text.style.display = "block";
+      text.style.opacity = "0";
+      text.animate([{ opacity: "0" }, { opacity: "1" }], {
+        duration: 200,
+        fill: "forwards",
+      });
+    }, 100);
+  } else {
+    text.style.display = "none";
+    extend.animate([{ height: "calc(100% -  61px)" }, { height: "0%" }], {
+      duration: 200,
+    });
+    setTimeout(() => {
+      extend.style.display = "none";
+      text.style.display = "none";
+    }, 210);
+  }
+}

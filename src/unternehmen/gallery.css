@@ -25,14 +25,12 @@
 .gallery-link {
   width: 80%;
   aspect-ratio: 3/1;
-  background-color: grey;
+  background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-image: url("https://www.w3schools.com/w3images/mountains.jpg");
-  background-size: cover;
   background-position: center;
 }
 .gallery-item-title {

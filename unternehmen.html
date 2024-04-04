@@ -14,6 +14,7 @@
     <link rel="icon" href="src/images/finda-Logo-only.png" />
     <link rel="stylesheet" href="src/general/section.css" />
     <link rel="stylesheet" href="src/unternehmen/gallery.css" />
+    <link rel="stylesheet" href="src/unternehmen/chooser.css" />
   </head>
   <body>
     <div class="content">
@@ -79,83 +80,118 @@
         <div class="section-content-container">
           <div class="section-content-title">Preise</div>
         </div>
-        <div class="section-img-container">
-          <div class="section-content-item">
-            <div class="content-item-topbar">
-              <div class="content-item-title">Starter</div>
-              <div class="content-item-info">i</div>
+
+        <div class="choosers">
+          <div class="chooser">
+            <div class="chooser-topbar">
+              <div class="chooser-title">Starter</div>
+              <div class="chooser-info" onclick="openDialog(1)">i</div>
             </div>
-            <div class="content-item-stellen">
-              <div class="content-item-stellen-text" id="preis-1">
-                Anzahl Stellen (6€/Stelle)
+            <div class="chooser-content" id="content-1">
+              <div class="chooser-stellen">
+                <div id="chooser-stellen-preis">
+                  Anzahl Stellen<br />(6€/Stelle)
+                </div>
+                <input
+                  type="number"
+                  id="stellen-count-1"
+                  minlength="1"
+                  min="1"
+                  value="1"
+                />
               </div>
-              <input
-                type="number"
-                class="content-item-stellen-count"
-                id="content-item-stellen-count-1"
-                value="1"
-              />
-            </div>
-            <select
-              name="content-dauer"
-              id="content-dauer-select-1"
-              class="content-item-dauer-select"
-            >
-              <option value="6">6 Monate Intervall</option>
-              <option value="12">12 Monate Intervall</option>
-            </select>
-            <div class="content-item-premium">
-              <input type="checkbox" id="premium-check-1" />
-              <div class="content-item-premium-text">
-                Premium: +50% des Preises
+              <div class="chooser-dauer">
+                <select id="dauer-1">
+                  <option value="6">6 Monate Intervall</option>
+                  <option value="12">12 Monate Intervall</option>
+                </select>
+              </div>
+              <div class="chooser-dauer-info">
+                Rechnung wird fortlaufend für das ausgewählte Intervall
+                gestellt, Kündigung für jeweils nächstes Intervall
+                per Email möglich
+              </div>
+              <div class="chooser-premium">
+                <input type="checkbox" id="premium-1" />
+                <div>Premium: +50% des Preises</div>
+              </div>
+              <div class="chooser-price">
+                <div class="chooser-price-text">
+                  Gesamtpreis: <span id="preis-1">36</span>€
+                </div>
+              </div>
+              <button class="chooser-button" id="choose-1">Wählen</button>
+              <div class="chooser-extend" id="extend-1" style="display: none">
+                <div class="chooser-extend-text-box" id="extendt-1">
+                  <p>
+                    Erhalten Sie die Möglichkeit die gewählte Anzahl an
+                    Praktikums- und Ausbildungsstellen in der Anwendung online
+                    zu schalten.
+                  </p>
+                  <p>
+                    Die Premiumvorteile umfassen den Upload mehrerer Bilder
+                    sowie eines Videos. Ebenfalls erhalten Sie die Möglichkeit
+                    aktiv bewerbe unter dem Reiter "Vorgeschalgene Profile" zu
+                    matchen.
+                  </p>
+                  <p>Weitere Infos finden Sie im folgendem Video:</p>
+                  <video controls draggable="false" src=""></video>
+                </div>
               </div>
             </div>
-            <div class="content-item-gesamt">
-              <div class="content-item-gesamt-text">
-                Gesamtpreis:
-                <span class="content-item-gesamt-preis" id="gesamt-1">36</span>€
-              </div>
-            </div>
-            <button class="content-item-book" onclick="Buchen()">
-              <span> In der App buchen</span>
-            </button>
           </div>
-          <div class="section-content-item">
-            <div class="content-item-topbar">
-              <div class="content-item-title">Unlimited Access</div>
-              <div class="content-item-info">i</div>
+          <div class="chooser">
+            <div class="chooser-topbar">
+              <div class="chooser-title">Unlimited Access</div>
+              <div class="chooser-info" onclick="openDialog(2)">i</div>
             </div>
-            <div class="content-item-stellen">
-              <div class="content-item-stellen-text">Anzahl Stellen</div>
-              <input
-                type="text"
-                class="content-item-stellen-count"
-                value="♾️"
-                disabled
-              />
+            <div class="chooser-content" id="content-2">
+              <div class="chooser-stellen">
+                <div id="chooser-stellen-preis">Anzahl Stellen</div>
+                <input
+                  type="text"
+                  id="stellen-count-2"
+                  value="Unlimited"
+                  disabled
+                />
+              </div>
+              <div class="chooser-dauer">
+                <select id="dauer-2">
+                  <option value="6">6 Monate Intervall</option>
+                  <option value="12">12 Monate Intervall</option>
+                </select>
+              </div>
+              <div class="chooser-dauer-info">
+                Rechnung wird fortlaufend für das ausgewählte Intervall
+                gestellt, Kündigung für jeweils nächstes Intervall
+                per Email möglich
+              </div>
+              <div class="chooser-premium">
+                <input type="checkbox" id="premium-2" checked />
+                <div>Premium inklusive</div>
+              </div>
+              <div class="chooser-price">
+                <div class="chooser-price-text">
+                  Gesamtpreis: <span id="preis-2">540</span>€
+                </div>
+              </div>
+              <button class="chooser-button" id="choose-2">Wählen</button>
             </div>
-            <select
-              name="content-dauer"
-              id="content-dauer-select-2"
-              class="content-item-dauer-select"
-            >
-              <option value="6">6 Monate Intervall</option>
-              <option value="12">12 Monate Intervall</option>
-            </select>
-            <div class="content-item-premium">
-              <input type="checkbox" checked id="premium-check-2" />
-              <div class="content-item-premium-text">Premium inklusive</div>
-            </div>
-            <div class="content-item-gesamt">
-              <div class="content-item-gesamt-text">
-                Gesamtpreis:
-                <span class="content-item-gesamt-preis" id="gesamt-2">520</span
-                >€
+            <div class="chooser-extend" id="extend-2" style="display: none">
+              <div class="chooser-extend-text-box" id="extendt-2">
+                <p>
+                  Erhalten Sie die Möglichkeit unbegrenzt Stellen in der
+                  Anwendung online zu schalten.
+                </p>
+                <p>
+                  Die Premiumvorteile umfassen den Upload mehrerer Bilder sowie
+                  eines Videos. Ebenfalls erhalten Sie die Möglichkeit aktiv
+                  bewerbe unter dem Reiter "Vorgeschalgene Profile" zu matchen.
+                </p>
+                <p>Weitere Infos finden Sie im folgendem Video:</p>
+                <video draggable="false" controls src=""></video>
               </div>
             </div>
-            <button class="content-item-book" onclick="Buchen()">
-              <span>In der App buchen</span>
-            </button>
           </div>
         </div>
       </section>

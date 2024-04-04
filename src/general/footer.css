@@ -62,3 +62,19 @@ footer {
   transform: scale(1.1);
   transition: 0.3s;
 }
+
+@media (max-width: 908px) {
+  footer {
+    bottom: -160px;
+  }
+}
+@media (max-width: 583px) {
+  footer {
+    bottom: -220px;
+  }
+}
+@media (max-width: 335px) {
+  footer {
+    bottom: -280px;
+  }
+}

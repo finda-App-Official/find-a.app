@@ -80,10 +80,3 @@ section {
   color: white;
   font-family: "Roboto", sans-serif;
 }
-#preise {
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 100%, 1) 12%,
-    hsla(0, 0%, 0%, 1) 100%
-  );
-}

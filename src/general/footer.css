@@ -5,7 +5,6 @@ footer {
   align-items: center;
   background: linear-gradient(117.14deg, #0265b1 42.25%, #7b358c 72%);
   position: absolute;
-  bottom: -100px;
   left: 0;
 }
 
@@ -13,8 +12,8 @@ footer {
 
 .footer-content {
   width: 90%;
-  margin: 20px auto;
-  justify-content: space-evenly;
+  margin: 0 auto;
+  justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
@@ -49,11 +48,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 0;
 }
 .footer-social {
   margin: auto 5px;
-  height: 40px;
+  height: 20px;
   fill: white;
 }
 .footer-item:hover,

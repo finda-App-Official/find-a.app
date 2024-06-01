@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finda | Unternehmen</title>
     <link rel="stylesheet" href="src/general/body.css" />
-    <link rel="stylesheet" href="src/general/fonts.css" />
     <link rel="stylesheet" href="src/general/nav.css" />
     <link rel="stylesheet" href="src/general/footer.css" />
     <link rel="stylesheet" href="src/general/content.css" />
@@ -15,6 +14,10 @@
     <link rel="stylesheet" href="src/general/section.css" />
     <link rel="stylesheet" href="src/unternehmen/gallery.css" />
     <link rel="stylesheet" href="src/unternehmen/chooser.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
@@ -26,15 +29,45 @@
             class="content-nav-icon"
           />
         </div>
-        <button
-          type="button"
-          onclick="window.location.href='https://web.find-a.app'"
-          class="content-nav-button"
-        >
-          login
-        </button>
+        <nav>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
+          </div>
+          <div class="nav-item nav-item-active">
+            <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
+              >Unternehmen</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/about"
+              >about</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/contact"
+              >contact</a
+            >
+          </div>
+        </nav>
+        <div class="header-right-action">
+          <button
+            type="button"
+            onclick="window.location.href='https://web.find-a.app'"
+            class="content-nav-button"
+          >
+            login
+          </button>
+          <button type="button" class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <section>
+      <section class="banner-section">
+        <h2>Unternehmen</h2>
+      </section>
+      <section class="section-two section-white-bg">
         <div class="section-content-container">
           <div class="section-content-title">
             <span>Kostenlos Registrieren</span> und in wenigen Schritten
@@ -58,7 +91,7 @@
       <section>
         <div class="sponsor-bar"></div>
       </section>
-      <section>
+      <section class="section-one section-gray-bg">
         <div class="section-img-container">
           <img src="src/images/phone2.png" alt="Bild" class="section-img" />
         </div>
@@ -76,11 +109,8 @@
           </div>
         </div>
       </section>
-      <section id="preise">
-        <div class="section-content-container">
-          <div class="section-content-title">Preise</div>
-        </div>
-
+      <section class="preise-section" id="preise">
+        <h2>Preise</h2>
         <div class="choosers">
           <div class="chooser">
             <div class="chooser-topbar">
@@ -120,7 +150,9 @@
                   Gesamtpreis: <span id="preis-1">36</span>€
                 </div>
               </div>
-              <button onclick="Buchen()" class="chooser-button" id="choose-1">In der App buchen</button>
+              <button onclick="Buchen()" class="chooser-button" id="choose-1">
+                In der App buchen
+              </button>
               <div class="chooser-extend" id="extend-1" style="display: none">
                 <div class="chooser-extend-text-box" id="extendt-1">
                   <p>
@@ -179,7 +211,9 @@
                   Gesamtpreis: <span id="preis-2">540</span>€
                 </div>
               </div>
-              <button onclick="Buchen()" class="chooser-button" id="choose-2">In der App buchen</button>
+              <button onclick="Buchen()" class="chooser-button" id="choose-2">
+                In der App buchen
+              </button>
             </div>
             <div class="chooser-extend" id="extend-2" style="display: none">
               <div class="chooser-extend-text-box" id="extendt-2">
@@ -245,24 +279,7 @@
         </div>
       </section>
     </div>
-    <nav>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
-      </div>
-      <div class="nav-item nav-item-active">
-        <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
-          >Unternehmen</a
-        >
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/about">about</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/contact"
-          >contact</a
-        >
-      </div>
-    </nav>
+
     <footer>
       <div class="footer-content">
         <div class="footer-items">
@@ -378,3 +395,9 @@
     <script src="/src/unternehmen/price.js"></script>
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".mobile-toggle").click(function () {
+    $(".content-nav nav").slideToggle();
+  });
+</script>

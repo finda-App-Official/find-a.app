@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finda | Bewerber</title>
     <link rel="stylesheet" href="src/general/body.css" />
-    <link rel="stylesheet" href="src/general/fonts.css" />
     <link rel="stylesheet" href="src/general/nav.css" />
     <link rel="stylesheet" href="src/general/footer.css" />
     <link rel="stylesheet" href="src/general/content.css" />
     <link rel="stylesheet" href="src/general/section.css" />
     <link rel="stylesheet" href="src/general/download-button.css" />
     <link rel="icon" href="src/images/finda-Logo-only.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
@@ -23,15 +26,49 @@
             class="content-nav-icon"
           />
         </div>
-        <button
-          type="button"
-          onclick="window.location.href='https://web.find-a.app'"
-          class="content-nav-button"
-        >
-          login
-        </button>
+        <nav>
+          <div class="nav-item nav-item-active">
+            <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
+              >Unternehmen</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/about"
+              >about</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/contact"
+              >contact</a
+            >
+          </div>
+        </nav>
+        <div class="header-right-action">
+          <button
+            type="button"
+            onclick="window.location.href='https://web.find-a.app'"
+            class="content-nav-button"
+          >
+            login
+          </button>
+          <button type="button" class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <section>
+      <section class="home-video-section">
+        <video width="320" height="240" muted loop autoplay>
+          <source src="src/images/animation.mov" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+      <section class="home-fold-one">
         <div class="section-img-container">
           <img class="section-img" src="src/images/phone1.png" alt="Bild" />
         </div>
@@ -98,7 +135,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="section-two home-fold-two">
         <div class="section-content-container">
           <div class="section-content-title">
             Mit einem <span>Swipe</span> zum Praktikum
@@ -113,7 +150,7 @@
           <img src="src/images/phone4.png" alt="Bild" class="section-img" />
         </div>
       </section>
-      <section>
+      <section class="section-three home-fold-three">
         <div class="section-img-container">
           <img src="src/images/phone2.png" alt="Bild" class="section-img" />
         </div>
@@ -132,24 +169,6 @@
       </section>
       <!-- <video src="src/images/animation.mov" preload="auto" controls></video> -->
     </div>
-    <nav>
-      <div class="nav-item nav-item-active">
-        <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
-          >Unternehmen</a
-        >
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/about">about</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/contact"
-          >contact</a
-        >
-      </div>
-    </nav>
     <footer>
       <div class="footer-content">
         <div class="footer-items">
@@ -264,3 +283,9 @@
     </footer>
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".mobile-toggle").click(function () {
+    $(".content-nav nav").slideToggle();
+  });
+</script>

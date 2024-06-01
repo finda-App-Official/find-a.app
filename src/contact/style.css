@@ -1,6 +1,49 @@
-section {
-  height: calc(100vh - 120px);
-}
 .section-img {
   width: 60%;
+}
+section.contact-us-section {
+  margin-top: 70px;
+}
+.contact-us-section .section-content-container {
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.contact-info-col .section-content-title {
+  font-size: 34px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.contact-info-col .section-content-description {
+  margin-top: 10px;
+  padding: 10px 30px 10px 20px;
+  border-radius: 25px;
+  width: auto;
+  display: inline-block;
+  border: 3px solid #f1f1f1;
+}
+.contact-info-col .section-content-description ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.contact-info-col .section-content-description ul li a,
+.contact-info-col .section-content-description ul li p {
+  text-decoration: none;
+  color: #666;
+}
+.contact-info-col .section-content-description ul li p {
+  margin: 0;
+}
+.contact-info-col .section-content-description ul li {
+  margin: 12px 0 10px 0;
+}
+.contact-info-col .section-content-description ul li i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  margin-right: 5px;
 }

@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finda | Contact</title>
     <link rel="stylesheet" href="src/general/body.css" />
-    <link rel="stylesheet" href="src/general/fonts.css" />
     <link rel="stylesheet" href="src/general/nav.css" />
     <link rel="stylesheet" href="src/general/footer.css" />
     <link rel="stylesheet" href="src/general/content.css" />
@@ -13,6 +12,17 @@
     <link rel="stylesheet" href="src/general/download-button.css" />
     <link rel="stylesheet" href="src/contact/style.css" />
     <link rel="icon" href="src/images/finda-Logo-only.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="content">
@@ -24,23 +34,45 @@
             class="content-nav-icon"
           />
         </div>
-        <button
-          type="button"
-          onclick="window.location.href='https://web.find-a.app'"
-          class="content-nav-button"
-        >
-          login
-        </button>
-      </div>
-      <section>
-        <div class="section-content-container">
-          <div class="section-content-title">Unsere Kontaktdaten</div>
-          <div class="section-content-description">
-            E-Mail: <a href="mailto:info@find-a.app">info@find-a.app</a><br />
-            Tel: <a href="tel:+4917621732940">+49 176 21732940</a><br />
-            Adresse: Gymnasialstraße 3, 49716 Meppen
+        <nav>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
           </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
+              >Unternehmen</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/about"
+              >about</a
+            >
+          </div>
+          <div class="nav-item nav-item-active">
+            <a class="nav-item-link" href="https://www.find-a.app/contact"
+              >contact</a
+            >
+          </div>
+        </nav>
+        <div class="header-right-action">
+          <button
+            type="button"
+            onclick="window.location.href='https://web.find-a.app'"
+            class="content-nav-button"
+          >
+            login
+          </button>
+          <button type="button" class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+      </div>
+      <section class="banner-section">
+        <h2>Contact Us</h2>
+      </section>
+      <section class="contact-us-section">
         <div class="section-img-container">
           <img
             src="src/images/finda-Logo-only.png"
@@ -48,26 +80,34 @@
             class="section-img"
           />
         </div>
+        <div class="section-content-container">
+          <div class="contact-info-col">
+            <div class="section-content-title">Unsere Kontaktdaten</div>
+            <div class="section-content-description">
+              <ul>
+                <li>
+                  <a href="mailto:info@find-a.app"
+                    ><i class="ri-mail-send-line"></i> info@find-a.app</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+4917621732940"
+                    ><i class="ri-phone-line"></i> +49 176 21732940</a
+                  >
+                </li>
+                <li>
+                  <p>
+                    <i class="ri-map-pin-2-line"></i> Gymnasialstraße 3, 49716
+                    Meppen
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
-    <nav>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
-          >Unternehmen</a
-        >
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/about">about</a>
-      </div>
-      <div class="nav-item nav-item-active">
-        <a class="nav-item-link" href="https://www.find-a.app/contact"
-          >contact</a
-        >
-      </div>
-    </nav>
+
     <footer>
       <div class="footer-content">
         <div class="footer-items">
@@ -182,3 +222,9 @@
     </footer>
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".mobile-toggle").click(function () {
+    $(".content-nav nav").slideToggle();
+  });
+</script>

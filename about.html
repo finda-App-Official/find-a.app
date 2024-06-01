@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>finda | about</title>
     <link rel="stylesheet" href="src/general/body.css" />
-    <link rel="stylesheet" href="src/general/fonts.css" />
     <link rel="stylesheet" href="src/general/nav.css" />
     <link rel="stylesheet" href="src/general/footer.css" />
     <link rel="stylesheet" href="src/general/content.css" />
@@ -13,6 +12,10 @@
     <link rel="stylesheet" href="src/general/download-button.css" />
     <link rel="stylesheet" href="src/about/style.css" />
     <link rel="icon" href="src/images/finda-Logo-only.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="content">
@@ -24,15 +27,52 @@
             class="content-nav-icon"
           />
         </div>
-        <button
-          type="button"
-          onclick="window.location.href='https://web.find-a.app'"
-          class="content-nav-button"
-        >
-          login
-        </button>
+        <nav>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
+              >Unternehmen</a
+            >
+          </div>
+          <div class="nav-item nav-item-active">
+            <a class="nav-item-link" href="https://www.find-a.app/about"
+              >about</a
+            >
+          </div>
+          <div class="nav-item">
+            <a class="nav-item-link" href="https://www.find-a.app/contact"
+              >contact</a
+            >
+          </div>
+        </nav>
+        <div class="header-right-action">
+          <button
+            type="button"
+            onclick="window.location.href='https://web.find-a.app'"
+            class="content-nav-button"
+          >
+            login
+          </button>
+          <button type="button" class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <section>
+      <section class="banner-section">
+        <h2>About Us</h2>
+      </section>
+      <section class="about-us-section section-one">
+        <div class="section-img-container">
+          <img
+            src="src/images/ITCaresAward.jpg"
+            class="section-img"
+            alt="Bild"
+          />
+        </div>
         <div class="section-content-container">
           <div class="section-content-title">Von Schülern entwickelt</div>
           <div class="section-content-description">
@@ -56,33 +96,9 @@
             du unsere Kontaktdaten <a href="https://find-a.app/contact">hier</a>
           </div>
         </div>
-        <div class="section-img-container">
-          <img
-            src="src/images/ITCaresAward.jpg"
-            class="section-img"
-            alt="Bild"
-          />
-        </div>
       </section>
     </div>
-    <nav>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app">Bewerber</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/unternehmen"
-          >Unternehmen</a
-        >
-      </div>
-      <div class="nav-item nav-item-active">
-        <a class="nav-item-link" href="https://www.find-a.app/about">about</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-item-link" href="https://www.find-a.app/contact"
-          >contact</a
-        >
-      </div>
-    </nav>
+
     <footer>
       <div class="footer-content">
         <div class="footer-items">
@@ -197,3 +213,9 @@
     </footer>
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(".mobile-toggle").click(function () {
+    $(".content-nav nav").slideToggle();
+  });
+</script>

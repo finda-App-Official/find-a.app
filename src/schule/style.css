@@ -1,0 +1,28 @@
+.section-eins {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 80%;
+}
+.section-eins p {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  color: black;
+  text-align: start;
+  width: 60%;
+}
+.section-eins img {
+  height: 650px;
+  border-radius: 10px;
+}
+.section-scroll {
+  background-color: white;
+  height: calc(20% - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

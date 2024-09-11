@@ -109,9 +109,6 @@ section {
   border-radius: 50px;
 }
 
-.preise-section .choosers .chooser .chooser-content .chooser-stellen > div {
-}
-
 .preise-section .choosers .chooser .chooser-content .chooser-stellen input {
   border-radius: 10px;
   border: 1px solid #dce5f9;
@@ -161,22 +158,6 @@ section.banner-section h2 {
   color: #fff;
   text-transform: uppercase;
 }
-.about-us-section .section-img-container img {
-  width: 100% !important;
-}
-.about-us-section .section-content-container {
-  padding-right: 5%;
-  box-sizing: border-box;
-}
-.about-us-section .section-content-container .section-content-title {
-  margin-bottom: 0;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: normal;
-}
-.about-us-section .section-content-container .section-content-description {
-  margin-top: 0;
-}
 section.home-video-section video {
   height: 100vh;
   width: 100%;
@@ -213,26 +194,6 @@ section.section-gray-bg {
 section.section-gray-bg .section-content-container {
   background-color: transparent;
   border: none;
-}
-
-button.mobile-toggle {
-  border: 2px solid #666;
-  height: 34px;
-  display: inline-block;
-  width: 34px;
-  border-radius: 6px;
-  background-color: transparent;
-  cursor: pointer;
-}
-button.mobile-toggle span {
-  display: block;
-  height: 2px;
-  background-color: #666;
-  margin: 5px 0;
-}
-.header-right-action {
-  display: flex;
-  align-items: center;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1299px) {
   section.home-video-section video {
@@ -351,34 +312,5 @@ button.mobile-toggle span {
     margin: 0 auto;
     width: 90%;
     justify-content: center;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .header-right-action button.mobile-toggle {
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .content-nav {
-    position: relative;
-  }
-  .content-nav nav {
-    display: none;
-    z-index: 99;
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    top: 60px;
-    border-top: 1px solid #ccc;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .content-nav nav .nav-item {
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-  }
-  .header-right-action {
-    padding-right: 30px;
   }
 }

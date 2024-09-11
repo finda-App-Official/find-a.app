@@ -4,3 +4,28 @@ section {
 .section-img {
   width: 80%;
 }
+.about-us-section .section-img-container img {
+  width: 100% !important;
+}
+.about-us-section .section-content-container {
+  padding-right: 5%;
+  box-sizing: border-box;
+}
+.about-us-section .section-content-container .section-content-title {
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: normal;
+}
+.about-us-section .section-content-container .section-content-description {
+  margin-top: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .about-us-section .section-content-container .section-content-title {
+    font-size: 24px;
+  }
+  section.about-us-section.section-one .section-content-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

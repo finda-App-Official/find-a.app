@@ -1,0 +1,41 @@
+.schulen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.schulen-title {
+  font-size: 2rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.schulen-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.schule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8rem;
+  width: auto;
+}
+.schule {
+  height: 80%;
+  width: auto;
+}
+
+@media screen and (max-width: 855px) {
+  .schulen-list {
+    width: 90%;
+  }
+}

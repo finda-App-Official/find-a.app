@@ -1,0 +1,95 @@
+.front-section {
+  background-image: url("../images/schule-1.jpg");
+  background-size: cover;
+  height: calc(100% - 60px);
+  aspect-ratio: 1170 / 660;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.front-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem;
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.front-text {
+  color: white;
+  font-weight: 700;
+  font-size: 130px;
+}
+.mouse {
+  width: 45px;
+  height: 60px;
+  border: 1px solid rgb(196, 196, 196);
+  background-color: transparent;
+  border-radius: 13px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.scroll {
+  width: 5px;
+  height: 20px;
+  background-color: rgb(196, 196, 196);
+  border-radius: 2px;
+  position: absolute;
+  bottom: 9px;
+  animation: move_918 1.5s linear infinite;
+}
+
+@keyframes move_918 {
+  0% {
+    bottom: 9px;
+  }
+
+  50% {
+    bottom: 5px;
+  }
+
+  100% {
+    bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  .front-text {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  .front-text {
+    font-size: 80px;
+  }
+  .mouse {
+    display: none;
+  }
+}
+@media screen and (max-width: 845px) {
+  .front-text {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .front-section {
+    background-image: url("../images/schule-6.jpg");
+    aspect-ratio: unset;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .front-text {
+    font-size: 40px;
+  }
+}

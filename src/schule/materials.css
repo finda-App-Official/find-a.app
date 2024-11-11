@@ -7,11 +7,14 @@
   justify-content: center;
   gap: 2rem;
 }
-.materials-title {
+.materials-title, .materials-title-handy {
   font-size: 40px;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+}
+.materials-title-handy {
+  display: none;
 }
 .materials-buttons {
   display: flex;
@@ -30,4 +33,12 @@
   border: none;
   border-radius: 1rem;
   background-color: rgb(46, 103, 226);
+}
+@media screen and (max-width: 768px) {
+  .materials-title {
+    display: none;
+  }
+  .materials-title-handy {
+    display: block;
+  }
 }

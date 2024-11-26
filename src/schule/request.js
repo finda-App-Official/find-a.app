@@ -3,7 +3,7 @@ function requestFlyer() {
   const email = document.getElementById("materials-form-email");
   const name = document.getElementById("materials-form-name");
   const more = document.getElementById("materials-form-textarea");
-
+  console.log(count, email, name, more);
   const error = document.getElementById("materials-form-error");
 
   if (!error) return;

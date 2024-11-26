@@ -200,47 +200,17 @@
         <div class="materials-title">Materialien</div>
         <div class="materials-container">
           <div class="materials-form">
-            <div class="materials-form-title">Print-Flyer anfordern</div>
-            <div class="materials-form-input-row">
-              <input
-                type="number"
-                class="materials-form-input"
-                id="materials-form-count"
-                min="1"
-                style="width: 30%"
-                placeholder="Anzahl"
-              />
-              <input
-                type="email"
-                class="materials-form-input"
-                id="materials-form-email"
-                minlength="1"
-                placeholder="kontakt@schulen-email.de"
-              />
+            <div class="materials-form-title">Flyer anfordern</div>
+            <div class="materials-form-subtitle">
+              Schreiben Sie uns eine E-Mail mit allen wichtigen Information, wie
+              der gewünschten Anzahl an Flyer und der Sendungs-Adresse
             </div>
-            <div class="materials-form-input-row">
-              <input
-                type="text"
-                minlength="1"
-                class="materials-form-input"
-                id="materials-form-name"
-                placeholder="Schulen-Name"
-              />
-            </div>
-            <div class="materials-form-input-row">
-              <textarea
-                id="materials-form-textarea"
-                class="materials-form-textarea"
-                placeholder="Zusatzinformationen"
-              ></textarea>
-            </div>
-            <div class="materials-form-error" id="materials-form-error"></div>
-            <button class="materials-form-button" onclick="requestFlyer()">
-              Anfordern
-            </button>
             <div class="materials-form-info">
-              * wir melden uns so schnell wie möglich!
+              * wir melden uns so schnell wie möglich
             </div>
+            <a class="materials-form-button" href="mailto:info@find-a.app"
+              >Email schreiben</a
+            >
           </div>
           <div class="materials-download">
             <div class="materials-download-title">Zum Download</div>
@@ -421,7 +391,6 @@
         </div>
       </div>
     </footer>
-    <script src="src/schule/request.js"></script>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript">

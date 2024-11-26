@@ -46,12 +46,12 @@
           </div>
           <div class="nav-item">
             <a class="nav-item-link" href="https://www.find-a.app/about"
-              >about</a
+              >Über uns</a
             >
           </div>
           <div class="nav-item">
             <a class="nav-item-link" href="https://www.find-a.app/contact"
-              >contact</a
+              >Kontakt</a
             >
           </div>
         </nav>
@@ -197,26 +197,96 @@
         </div>
       </section>
       <section class="materials">
-        <div class="materials-title">
-          Materialien um finda im Unterricht zu benutzen
-        </div>
-        <div class="materials-title-handy">Materialien zur finda App</div>
-        <div class="materials-buttons">
-          <a
-            href="src/material/Anleitung-finda-im-Unterricht.pdf"
-            download="Anleitung-finda-im-Unterricht"
-            >Download: Anleitung-finda-im-Unterricht.pdf</a
-          >
-          <a
-            href="src/material/InfoTextSchüler.pdf"
-            download="Info-Text-Schüler-finda"
-            >Download: Info-Text-Schüler-finda.pdf</a
-          >
-          <a
-            href="src/material/Texte-Lehrer-Infos-zur-App.pdf"
-            download="Texte-Lehrer-Infos-finda-App"
-            >Download: Texte-Lehrer-Infos-finda-App.pdf</a
-          >
+        <div class="materials-title">Materialien</div>
+        <div class="materials-container">
+          <div class="materials-form">
+            <div class="materials-form-title">Print-Flyer anfordern</div>
+            <div class="materials-form-input-row">
+              <input
+                type="number"
+                class="materials-form-input"
+                id="materials-form-count"
+                min="1"
+                style="width: 30%"
+                placeholder="Anzahl"
+              />
+              <input
+                type="email"
+                class="materials-form-input"
+                id="materials-form-email"
+                minlength="1"
+                placeholder="kontakt@schulen-email.de"
+              />
+            </div>
+            <div class="materials-form-input-row">
+              <input
+                type="text"
+                minlength="1"
+                class="materials-form-input"
+                id="materials-form-name"
+                placeholder="Schulen-Name"
+              />
+            </div>
+            <div class="materials-form-input-row">
+              <textarea
+                id="materials-form-textarea"
+                class="materials-form-textarea"
+                placeholder="Zusatzinformationen"
+              ></textarea>
+            </div>
+            <div class="materials-form-error" id="materials-form-error"></div>
+            <button class="materials-form-button" onclick="requestFlyer()">
+              Anfordern
+            </button>
+            <div class="materials-form-info">
+              * wir melden uns so schnell wie möglich!
+            </div>
+          </div>
+          <div class="materials-download">
+            <div class="materials-download-title">Zum Download</div>
+            <div class="materials-download-list">
+              <a
+                class="materials-download-item"
+                href="src/material/finda Schule (Lehrer).pdf"
+                download="finda Schule (Lehrer)"
+              >
+                <div class="materials-download-item-title">
+                  finda Schule (Lehrer)
+                </div>
+                <div class="materials-download-item-type">.pdf</div>
+              </a>
+              <a
+                class="materials-download-item"
+                href="src/material/finda Schule (Schüler).pdf"
+                download="finda Schule (Schüler)"
+              >
+                <div class="materials-download-item-title">
+                  finda Schule (Schüler)
+                </div>
+                <div class="materials-download-item-type">.pdf</div>
+              </a>
+              <a
+                class="materials-download-item"
+                href="src/material/Info-Text-Schüler (finda).pdf"
+                download="Info Text Schüler (finda)"
+              >
+                <div class="materials-download-item-title">
+                  Info Text Schüler (finda)
+                </div>
+                <div class="materials-download-item-type">.pdf</div>
+              </a>
+              <a
+                class="materials-download-item"
+                href="src/material/Text-Lehrer-Schule (finda).pdf"
+                download="Text Lehrer Schule (finda)"
+              >
+                <div class="materials-download-item-title">
+                  Text Lehrer Schule (finda)
+                </div>
+                <div class="materials-download-item-type">.pdf</div>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="email-section">
@@ -351,6 +421,87 @@
         </div>
       </div>
     </footer>
+    <script>
+      function requestFlyer() {
+        const count = document.getElementById("materials-form-count");
+        const email = document.getElementById("materials-form-email");
+        const name = document.getElementById("materials-form-name");
+        const more = document.getElementById("materials-form-textarea");
+        console.log(count, email, name, more);
+        const error = document.getElementById("materials-form-error");
+
+        if (!error) return;
+
+        if (!count || !email || !name || !more) return;
+
+        if (!count.value) {
+          error.innerHTML = "Bitte geben Sie die Anzahl der Flyer an.";
+          setTimeout(() => {
+            error.innerHTML = "";
+          }, 3000);
+          return;
+        }
+        if (!email.value) {
+          error.innerHTML = "Bitte geben Sie Ihre E-Mail-Adresse an.";
+          setTimeout(() => {
+            error.innerHTML = "";
+          }, 3000);
+          return;
+        }
+        if (!name.value) {
+          error.innerHTML = "Bitte geben Sie Ihren Schul-Namen an.";
+          setTimeout(() => {
+            error.innerHTML = "";
+          }, 3000);
+          return;
+        }
+
+        const data = {
+          count: count.value,
+          email: email.value,
+          name: name.value,
+          more: more.value,
+        };
+        fetch("https://payments.find-a.app/schule/flyer", {
+          method: "POST",
+          body: JSON.stringify(data),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+            if (!data.processable) {
+              error.innerHTML =
+                "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+              setTimeout(() => {
+                error.innerHTML = "";
+              }, 3000);
+              return;
+            }
+
+            count.value = "";
+            email.value = "";
+            name.value = "";
+            more.value = "";
+
+            alert(
+              "Ihre Anfrage wurde erfolgreich versendet. Wir werden uns in Kürze bei Ihnen melden."
+            );
+            return;
+          })
+          .catch((err) => {
+            console.log(err);
+            error.innerHTML =
+              "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+            setTimeout(() => {
+              error.innerHTML = "";
+            }, 3000);
+            return;
+          });
+      }
+    </script>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript">

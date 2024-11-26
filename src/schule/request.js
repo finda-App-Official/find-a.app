@@ -38,7 +38,7 @@ function requestFlyer() {
     name: name.value,
     more: more.value,
   };
-  fetch("https://payments.find-a.app/schule/flyer", {
+  fetch("https://payments.find-a.app/api/schule/flyer", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {

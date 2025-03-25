@@ -61,7 +61,7 @@ document.getElementById("dauer-2").addEventListener("change", (ev) => {
   let gesamt = document.getElementById("preis-2");
   let value = document.getElementById("dauer-2").value;
   if (value === "6") {
-    gesamt.innerHTML = "520";
+    gesamt.innerHTML = "540";
   } else if (value === "12") {
     gesamt.innerHTML = "999";
   }

@@ -86,15 +86,15 @@ button.mobile-toggle span {
   height: 40px;
   margin: auto 30px;
   font-size: 16px;
-  padding: 0 20px;
+  padding: 0 10px;
   background-color: rgb(46, 103, 226);
-  border: none;
+  text-wrap: nowrap;
   border-radius: 50px;
   color: white;
-  text-transform: capitalize;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 .content-nav-button:hover {
   cursor: pointer;
@@ -147,13 +147,15 @@ button.mobile-toggle span {
     font-size: max(3vw, 1.2rem);
   }
 }
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
   .nav-item-link {
     font-size: 4vw;
   }
   .content-nav-button {
-    font-size: 14px;
-    padding: 0 10px;
+    font-size: 12px;
+    padding: 0 5px;
+    justify-content: center;
+    text-decoration: none;
   }
 }
 @media (max-width: 370px) {

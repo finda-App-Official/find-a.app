@@ -1,31 +1,94 @@
 section {
   height: calc(100vh - 120px);
 }
-.section-img {
-  width: 80%;
+.hero-img {
+  width: 600px;
 }
-.about-us-section .section-img-container img {
-  width: 100% !important;
+.about-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  height: calc(100vh - 61px);
 }
-.about-us-section .section-content-container {
-  padding-right: 5%;
-  box-sizing: border-box;
+.hero-section {
+  position: relative;
 }
-.about-us-section .section-content-container .section-content-title {
-  margin-bottom: 0;
+.references {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.references-title {
   font-size: 30px;
   font-weight: 600;
-  line-height: normal;
+  margin-bottom: 10px;
 }
-.about-us-section .section-content-container .section-content-description {
-  margin-top: 0;
+.references-content {
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
-@media only screen and (max-width: 1024px) {
-  .about-us-section .section-content-container .section-content-title {
-    font-size: 24px;
+.reference {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  width: 30%;
+  min-width: 400px;
+}
+.reference-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 0.25rem;
+}
+.reference-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.reference-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.reference-courtesy {
+  font-size: 14px;
+  color: #555;
+  text-align: right;
+}
+@media screen and (max-width: 1430px) {
+  .about-content {
+    flex-direction: column;
   }
-  section.about-us-section.section-one .section-content-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  .hero-img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-img {
+    margin-top: 10%;
+  }
+  .references {
+    margin-top: 60px;
+  }
+  .reference {
+    width: 90%;
+    min-width: unset;
   }
 }

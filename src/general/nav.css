@@ -92,6 +92,9 @@ button.mobile-toggle span {
   border-radius: 50px;
   color: white;
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .content-nav-button:hover {
   cursor: pointer;

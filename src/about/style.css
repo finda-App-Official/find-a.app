@@ -7,13 +7,14 @@ section {
 .about-content {
   width: 90%;
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   margin: 0 auto;
   flex-wrap: nowrap;
-  height: calc(100vh - 61px);
+  min-height: calc(100vh - 61px);
 }
 .hero-section {
   position: relative;
@@ -39,6 +40,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  gap: 1rem;
 }
 .reference {
   display: flex;
@@ -47,6 +49,8 @@ section {
   padding: 1rem;
   width: 30%;
   min-width: 400px;
+  border: 0.1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.25rem;
 }
 .reference-img {
   width: 100%;

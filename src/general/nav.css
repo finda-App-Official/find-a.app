@@ -23,7 +23,7 @@
 
 /* Navbar */
 
-nav {
+nav.navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,27 +49,27 @@ nav {
   color: black;
   font-size: max(2vw, 1.4rem);
 }
-nav .nav-item {
+nav.navbar .nav-item {
   transition: all 0.3s ease-out;
 }
-nav .nav-item {
+nav.navbar .nav-item {
   border-bottom: 3px solid transparent !important;
 }
-nav .nav-item:hover,
-nav .nav-item-active {
+nav.navbar .nav-item:hover,
+nav.navbar .nav-item-active {
   border-bottom: 3px solid rgb(46, 103, 226) !important;
 }
 
 /* Navbar Buttons */
 
 button.mobile-toggle {
-  border: 2px solid #666;
   height: 34px;
   display: inline-block;
   width: 34px;
   border-radius: 6px;
   background-color: transparent;
   cursor: pointer;
+  border: none;
 }
 button.mobile-toggle span {
   display: block;
@@ -77,7 +77,7 @@ button.mobile-toggle span {
   background-color: #666;
   margin: 5px 0;
 }
-.header-right-action {
+.nav-action {
   display: flex;
   align-items: center;
 }
@@ -96,25 +96,6 @@ button.mobile-toggle span {
 .content-nav-button:hover {
   cursor: pointer;
 }
-button.mobile-toggle {
-  border: 2px solid #666;
-  height: 34px;
-  display: inline-block;
-  width: 34px;
-  border-radius: 6px;
-  background-color: transparent;
-  cursor: pointer;
-}
-button.mobile-toggle span {
-  display: block;
-  height: 2px;
-  background-color: #666;
-  margin: 5px 0;
-}
-.header-right-action {
-  display: flex;
-  align-items: center;
-}
 
 /* Screen Rules */
 
@@ -127,7 +108,7 @@ button.mobile-toggle span {
   .content-nav {
     position: relative;
   }
-  .content-nav nav {
+  .content-nav nav.navbar {
     display: none;
     z-index: 99;
     position: absolute;
@@ -138,17 +119,17 @@ button.mobile-toggle span {
     flex-wrap: wrap;
     flex-direction: row;
   }
-  .content-nav nav .nav-item {
+  .content-nav nav.navbar .nav-item {
     width: 100%;
     height: auto;
     padding: 10px 0;
   }
-  .header-right-action {
+  .nav-action {
     padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1046px) {
-  .header-right-action button.mobile-toggle {
+  .nav-action button.mobile-toggle {
     display: none;
   }
 }
@@ -166,6 +147,10 @@ button.mobile-toggle span {
 @media (max-width: 440px) {
   .nav-item-link {
     font-size: 4vw;
+  }
+  .content-nav-button {
+    font-size: 14px;
+    padding: 0 10px;
   }
 }
 @media (max-width: 370px) {

@@ -13,25 +13,33 @@
   font-weight: bold;
   text-align: center;
 }
-.schulen-list {
+#google-map {
+  width: 700px;
+  height: 500px;
+  border: 1px solid #ccc;
+  align-self: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+.map-info-top {
   display: flex;
   flex-direction: row;
+  gap: 0.5rem;
   align-items: center;
-  justify-content: center;
-  width: 60%;
-  gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: start;
 }
-.schule-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 8rem;
-  width: auto;
+.map-info-top > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
-.schule {
-  height: 80%;
-  width: auto;
+.map-info-top > h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+.map-info-window > p {
+  font-size: 0.75rem;
 }
 .teams-link {
   font-size: 1rem;
@@ -53,8 +61,9 @@
   height: 2rem;
   width: 2rem;
 }
-@media screen and (max-width: 855px) {
-  .schulen-list {
+@media (max-width: 700px) {
+  #google-map {
     width: 90%;
+    aspect-ratio: 7/5;
   }
 }

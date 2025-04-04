@@ -14,7 +14,7 @@
   height: 60px;
   display: flex;
   justify-content: center;
-  margin: 0 30px;
+  margin: 0 10px;
 }
 .content-nav-icon {
   height: 50px;
@@ -88,7 +88,6 @@ button.mobile-toggle span {
   font-size: 16px;
   padding: 0 10px;
   background-color: rgb(46, 103, 226);
-  text-wrap: nowrap;
   border-radius: 50px;
   color: white;
   display: flex;
@@ -147,15 +146,13 @@ button.mobile-toggle span {
     font-size: max(3vw, 1.2rem);
   }
 }
-@media screen and (max-width: 440px) {
+@media (max-width: 440px) {
   .nav-item-link {
     font-size: 4vw;
   }
   .content-nav-button {
     font-size: 12px;
     padding: 0 5px;
-    justify-content: center;
-    text-decoration: none;
   }
 }
 @media (max-width: 370px) {

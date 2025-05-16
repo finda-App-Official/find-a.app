@@ -43,7 +43,6 @@ section {
   gap: 1rem;
 }
 .reference {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
@@ -51,6 +50,9 @@ section {
   min-width: 400px;
   border: 0.1px solid rgba(128, 128, 128, 0.2);
   border-radius: 0.25rem;
+  position: relative;
+  display: flex;
+  max-width: 600px;
 }
 .reference-img {
   width: 100%;
@@ -62,12 +64,25 @@ section {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .reference-description {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
   font-style: italic;
+  max-lines: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 .reference-courtesy {
   font-size: 14px;

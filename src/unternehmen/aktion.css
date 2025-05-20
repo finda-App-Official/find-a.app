@@ -1,0 +1,50 @@
+.aktion-content {
+  position: relative;
+  margin: 0 5%;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.aktion-img {
+  width: 60%;
+  margin-top: -180px;
+  margin-bottom: -100px;
+}
+.aktion-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.chooser-action {
+  position: absolute;
+  bottom: 35px;
+  right: -140px;
+  rotate: -40deg;
+  width: 400px;
+  z-index: 999;
+  background-color: white;
+  text-align: center;
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+.chooser-action:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 1500px) {
+  .aktion-img {
+    margin-top: -100px;
+    margin-bottom: -50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aktion-img {
+    width: 90%;
+    margin-top: -50px;
+    margin-bottom: -25px;
+  }
+}

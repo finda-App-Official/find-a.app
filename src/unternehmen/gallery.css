@@ -40,6 +40,9 @@ section#gallery {
   width: 100%;
   border: 2px dashed #cecdcf;
 }
+.gallery-highlighted {
+  border: 2px dashed #2e67e2;
+}
 .gallery-item-title {
   font-size: 20px;
   margin: auto;
@@ -68,6 +71,7 @@ a.gallery-link {
 
 a.gallery-link:hover {
   background-color: #7b358c;
+  border: 2px dashed #cecdcf;
 }
 
 a.gallery-link:hover .gallery-item-title {

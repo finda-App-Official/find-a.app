@@ -133,14 +133,6 @@ function initMap() {
       imgUrl: "src/images/schulen/SchuleAmSee.png",
     },
     {
-      locationName: "Friedensschule Lingen",
-      lat: 52.50752530081498,
-      lng: 7.329764169988979,
-      address: "Kiesbergstraße 80, <br /> 49809 Lingen (Ems)",
-      students: 250,
-      imgUrl: "src/images/schulen/Friedensschule.png",
-    },
-    {
       locationName: "Lise-Meitner-Gymnasium",
       lat: 52.49434201519441,
       lng: 6.9679618889648465,

@@ -6,7 +6,17 @@ function initMap() {
       lng: 7.2853448070472595,
       address: "Nagelshof 83, <br /> 49716 Meppen",
       students: 4100,
-      imgUrl: "src/images/schulen/bbs-meppen.png",
+      imgUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2OKTYVbo5Sj5p-lcu4zYiJAOHs97EwUymw&s",
+    },
+    {
+      locationName: "Gymnasium Leoninum",
+      lat: 52.5676432823063,
+      lng: 7.592979139630961,
+      address: "Hestruper Str. 1, <br/> 49838 Handrup",
+      students: 1300,
+      imgUrl:
+        "https://leoninum.org/wp-content/themes/leoninum_2020/assets/images/icon-leoninum-handrup-web.svg",
     },
     {
       locationName: "Johannesschule",
@@ -15,6 +25,24 @@ function initMap() {
       address: "Nagelshof 21, <br /> 49716 Meppen",
       students: 750,
       imgUrl: "src/images/schulen/JSM.png",
+    },
+    {
+      locationName: "Gymnasium Haren",
+      lat: 52.78970192414073,
+      lng: 7.240945468476536,
+      address: "Kirchstraße 28, <br /> 49733 Haren (Ems)",
+      students: 675,
+      imgUrl:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2qix7MBoW32cvQCFhCJmlg03u5BI7T402OmiWcX1byQPCYyS_ax3KqfSSs7GN1F0q1iM&usqp=CAU",
+    },
+    {
+      locationName: "Mariengymnasium Papenburg",
+      lat: 53.08057689513408,
+      lng: 7.388269266448085,
+      address: "Am Stadtpark 29/31, <br /> 26871 Papenburg",
+      students: 670,
+      imgUrl:
+        "https://b2155050.smushcdn.com/2155050/wp-content/uploads/2022/03/Logo-MG_neu.png?lossy=0&strip=1&webp=1",
     },
     {
       locationName: "Windthorstgymnasium Meppen",
@@ -63,6 +91,15 @@ function initMap() {
       imgUrl: "src/images/schulen/BödikerOberschule.png",
     },
     {
+      locationName: "Ludgerus-Schule",
+      lat: 53.06813573831446,
+      lng: 7.27893889731255,
+      address: "Schulstraße 10, <br/> 26899 Rhede (Ems)",
+      students: 400,
+      imgUrl:
+        "https://ludgerusschule-rhede.de/wp-content/uploads/2022/03/Ludgerusschule-Logo-Schein.png",
+    },
+    {
       locationName: "Martinus Oberschule Haren",
       lat: 52.78887442768349,
       lng: 7.237771862238779,
@@ -76,7 +113,8 @@ function initMap() {
       lng: 7.330954426197252,
       address: "Schulstraße 6, <br /> 26892 Dörpen",
       students: 530,
-      imgUrl: "",
+      imgUrl:
+        "https://gymnasium-doerpen.de/wp-content/uploads/2023/06/gymnasium-doerpen-logo.svg",
     },
     {
       locationName: "Maximilianschule Rütenbrock (GHS)",
@@ -101,6 +139,15 @@ function initMap() {
       address: "Kiesbergstraße 80, <br /> 49809 Lingen (Ems)",
       students: 250,
       imgUrl: "src/images/schulen/Friedensschule.png",
+    },
+    {
+      locationName: "Lise-Meitner-Gymnasium",
+      lat: 52.49434201519441,
+      lng: 6.9679618889648465,
+      address: "Bosthorst 10, <br /> 49828 Neuenhaus",
+      students: 900,
+      imgUrl:
+        "https://lmg-neuenhaus.de/wp-content/uploads/2017/07/lmg-logo.svg",
     },
   ];
 
@@ -232,6 +279,11 @@ function initMap() {
     const marker = new google.maps.Marker({
       position: { lat: markers[i].lat, lng: markers[i].lng },
       map: map,
+      iconStyles: {
+        height: 20,
+        width: 20,
+      },
+      icon: "https://github.com/finda-App-Official/find-a.app/blob/main/src/images/schuliconneu2.png?raw=true",
     });
 
     function createInfoWindow() {

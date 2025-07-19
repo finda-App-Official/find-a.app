@@ -125,7 +125,7 @@ function initMap() {
       imgUrl: "src/images/schulen/IMG_0617-removebg-preview.png",
     },
     {
-      locationName: "Volkshochschule Twist",
+      locationName: "Oberschule Twist",
       lat: 52.64830283404259,
       lng: 7.0916952685797305,
       address: "Flensbergstraße 17, <br /> 49767 Twist",

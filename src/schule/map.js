@@ -275,7 +275,7 @@ function initMap() {
         height: 20,
         width: 20,
       },
-      icon: "https://github.com/finda-App-Official/find-a.app/blob/main/src/images/schuliconneu2.png?raw=true",
+      icon: "../images/schuliconneu2.png",
     });
 
     function createInfoWindow() {

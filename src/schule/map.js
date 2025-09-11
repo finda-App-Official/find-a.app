@@ -275,7 +275,7 @@ function initMap() {
         height: 20,
         width: 20,
       },
-      icon: "../images/schuliconneu2.png",
+      icon: "src/images/schuliconneu2.png",
     });
 
     function createInfoWindow() {

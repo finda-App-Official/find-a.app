@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz\,wght.ttf");
+  font-style: italic;
+}
+
 .section-eins {
   width: 100%;
   display: flex;

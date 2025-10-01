@@ -1,9 +1,28 @@
+@font-face {
+  font-family: Jost;
+  src: url("../fonts/Jost/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Jost;
+  src: url("../fonts/Jost/Jost-Italic-VariableFont_wght.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: Robot;
+  src: url("../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf");
+  font-style: italic;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Jost", sans-serif;
+  font-family: Jost, sans-serif;
 }
 body::-webkit-scrollbar {
   display: none;

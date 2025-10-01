@@ -1,0 +1,38 @@
+.document > * {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px;
+}
+
+.document > h1 {
+  font-weight: 600;
+  font-size: 22px;
+}
+.document > h2 {
+  font-weight: 600;
+  font-size: 19px;
+}
+.document > h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.document > p {
+  font-weight: normal;
+  font-size: 16px;
+}
+.strong {
+  font-weight: 600;
+}
+.underline {
+  text-decoration: underline;
+}
+.document > a {
+  text-decoration: underline;
+  color: blue;
+}
+.document > ul {
+  list-style: circle;
+  > li {
+    font-weight: normal;
+    font-size: 16px;
+  }
+}

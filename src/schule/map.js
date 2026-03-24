@@ -141,6 +141,20 @@ function initMap() {
       imgUrl:
         "https://lmg-neuenhaus.de/wp-content/uploads/2017/07/lmg-logo.svg",
     },
+    {
+      locationName: "Heinrich-von-Kleist-Schule",
+      lat: 53.07203049235749,
+      lng: 7.400878054994908,
+      address: "Kleiststraße 12, <br/> 26871 Papenburg",
+      imgUrl: "https://hvk-papenburg.de/iserv/logo/logo.49b560ca.png",
+    },
+    {
+      locationName: "Erna-de-Vries-Schule Lathen",
+      lat: 52.867028635194806,
+      lng: 7.317176253140778,
+      address: "18-22, Mühlenstraße, <br />49762 Lathen",
+      imgUrl: "https://edvs-iserv.de/iserv/logo/logo.57d769af.png",
+    },
   ];
 
   const centerMap = { lat: 52.76859750381811, lng: 7.383795604295492 };
@@ -257,7 +271,7 @@ function initMap() {
 
   const map = new google.maps.Map(
     document.getElementById("google-map"),
-    mapOptions
+    mapOptions,
   );
 
   const infoWindow = new google.maps.InfoWindow({
@@ -284,7 +298,6 @@ function initMap() {
           <img src="${markers[i].imgUrl}" alt="" class="map-info-img" />
           <h3>${markers[i].locationName}</h3>
         </div>
-        <p>Gesamte Schüleranzahl: ${markers[i].students}</p>
         <p>${markers[i].address}</p>
       </div>`;
 

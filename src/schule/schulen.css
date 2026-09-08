@@ -21,19 +21,21 @@
   margin: 0 auto;
   max-width: 700px;
 }
-.map-info-top {
+.map-info-window {
   display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: start;
+  flex-direction: column;
+  gap: 1px;
+  max-width: 300px;
+  border-radius: 4px;
+  border: none;
 }
-.map-info-top > img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.map-info-window > img {
+  max-height: 70px;
+  width: auto;
+  aspect-ratio: inherit;
+  object-fit: contain;
 }
-.map-info-top > h3 {
+.map-info-window > h3 {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;

@@ -155,6 +155,69 @@ function initMap() {
       address: "18-22, Mühlenstraße, <br />49762 Lathen",
       imgUrl: "https://edvs-iserv.de/iserv/logo/logo.57d769af.png",
     },
+    {
+      locationName: "Oberschule Schüttorf",
+      lat: 52.322850302369766,
+      lng: 7.218070784034344,
+      address: "Karlstraße 5, <br/>48465 Schüttorf",
+      imgUrl: "https://obsschuettorf.de/iserv/logo/logo.png",
+    },
+    {
+      locationName: "Gymnasium Papenburg",
+      lat: 53.073182430513235,
+      lng: 7.398761124549588,
+      address: "Russellstraße 33, <br/>26871 Papenburg-Bokel",
+      imgUrl:
+        "https://www.gymnasium-papenburg.de/_assets/35d3016574707f66992f50aacd26b4b4/Images/logo.svg",
+    },
+    {
+      locationName: "Grund- und Oberschule Börgermoor",
+      lat: 53.00451282054961,
+      lng: 7.494454640173167,
+      address: "Schulstraße 1-7, <br/>26903 Surwold-Börgermoor",
+    },
+    {
+      locationName: "Oberschule Lengerich",
+      lat: 52.550471700094704,
+      lng: 7.530877298436287,
+      address: "Schulstraße 14, <br/>49838 Lengerich",
+    },
+    {
+      locationName: "Franziskus-Demann-Schule Freren",
+      lat: 52.48664850495126,
+      lng: 7.549324011028938,
+      address: "Klausenstraße 3, <br/>49832 Freren",
+      imgUrl: "https://fds-iserv.de/iserv/logo/logo_dark.c5add785.png",
+    },
+    {
+      locationName: "Antoniusschule Thuine",
+      lat: 52.49519132141124,
+      lng: 7.486646468700254,
+      address: "Mühlenstraße 1, 49832 Thuine",
+      imgUrl: "https://bwebstatic.de/logo/1331213192_anton.jpg",
+    },
+    {
+      locationName: "Realschule Bad Bentheim",
+      lat: 52.30082711533037,
+      lng: 7.159755099375228,
+      address: "Gartenstraße 1, <br/>48455 Bad Bentheim",
+      imgUrl:
+        "https://realschule-badbentheim.de/wp-content/uploads/2025/06/rsb_logo_rgb-1024x229.png",
+    },
+    {
+      locationName: "Burg-Gymnasium",
+      lat: 52.30766636967853,
+      lng: 7.162017111020697,
+      address: "Hetlage 5, 48455 Bad Bentheim",
+      imgUrl: "https://bgbentheim.de/iserv/logo/logo.7e7ca14f.jpg",
+    },
+    {
+      locationName: "GHS Gildehaus",
+      lat: 52.2951627018842,
+      lng: 7.100421682184638,
+      address: "Neuer Weg 8-10, <br/>48455 Bad Bentheim-Gildehaus",
+      imgUrl: "https://schule-gildehaus.de/iserv/logo/logo.4ad7fb33.jpg",
+    },
   ];
 
   const centerMap = { lat: 52.76859750381811, lng: 7.383795604295492 };
@@ -294,10 +357,8 @@ function initMap() {
 
     function createInfoWindow() {
       const infoWindowContent = `<div class="map-info-window">
-        <div class="map-info-top">
-          <img src="${markers[i].imgUrl}" alt="" class="map-info-img" />
-          <h3>${markers[i].locationName}</h3>
-        </div>
+        <img src="${markers[i].imgUrl}" alt="" class="map-info-img" />
+        <h3>${markers[i].locationName}</h3>
         <p>${markers[i].address}</p>
       </div>`;
 

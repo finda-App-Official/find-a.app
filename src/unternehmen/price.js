@@ -70,6 +70,10 @@ document.getElementById("premium-2").addEventListener("click", (ev) => {
   ev.preventDefault();
   document.getElementById("premium-2").checked = true;
 });
+document.getElementById("premium-3").addEventListener("click", (ev) => {
+  ev.preventDefault();
+  document.getElementById("premium-3").checked = true;
+});
 function Buchen() {
   window.location.href = "https://web.find-a.app";
 }
